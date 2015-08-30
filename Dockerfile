@@ -21,7 +21,7 @@ RUN tar xfz /tmp/pyopenssl.tar.gz -C /tmp && cd /tmp/pyopenssl-0.15.1 && python 
 # Dependencies: Tools
 RUN apk add unrar unzip 
 
-ADD par2 /usr/local/bin/par2
+ADD par2/par2 /usr/local/bin/par2
 # I build the binary in a separate alpine container and exported it with `docker cp`:
 #RUN apk add g++ automake autoconf make
 #ADD https://github.com/Parchive/par2cmdline/archive/v0.6.14.tar.gz /tmp/par2.tar.gz
